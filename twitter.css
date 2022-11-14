@@ -1,0 +1,19 @@
+#dpimg{
+    height: 60px;
+    width: 60px; 
+    border: 2px solid;
+}
+
+#new-fixed-div{
+    height: 50px;width: 50px;border:2px solid; border-radius: 25px; position: fixed; right: 0px; bottom: 60px; background-color: rgb(132, 200, 239); padding: 8px;
+}
+
+
+
+img{
+    border-radius: 15px
+}
+
+video{
+    border-radius: 10px;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="twitter.css">
+    <script src="twitter.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twitter</title>
+</head>
+<body onclick="theame()">
+    <div class="container" >
+        <table id="table"class="table col-sm-12 col-lg-6 col-md-4" style="width: 550px;">
+            <thead>
+                <td style="width: 66px; text-align: left;"><img class="img-fluid rounded-circle" style="height: 40px; width: 40px;" src="C:\Users\Doddi Naveen\Desktop\mythriofficial-31012022-0001.jpg"></td>
+                <td style="width: 66px; text-align: center;"><img class="img-fluid rounded-circle" style="height: 40px; width: 40px; " src="C:\Users\Doddi Naveen\Desktop\images.png"></td>
+                <td style="width: 66px; text-align: right;" ><img class="img-fluid rounded-circle" style="height: 40px; width: 40px; " src="C:\Users\Doddi Naveen\Desktop\download.png"></td>
+            </thead>
+            <tr>
+                <td style="width: 66px;" ><img id="dpimg" class="img-fluid rounded-circle" src="C:\Users\Doddi Naveen\Pictures\Saved Pictures\earth.jpg"></td>
+                <td>
+                    <span id="span">navnxx <span style="font-weight: lighter;">@naveenDoddi</span> .1h</span>
+                    <p style="color: rgb(19, 101, 177)">#virat #chasemaaster</p>
+                    <div class="row">
+                        <div id="pic" class="col-sm-12 col-lg-6">
+                            <div>
+                                <img id="img" style="width: 240px;" class="img-fluid" src="C:\Users\Doddi Naveen\Pictures\virat.jpg">
+                            </div>
+                        </div>
+                        <div id="buttons" class="bt-group">
+                            <button  class="btn bi bi-heart" style="border-radius: 30px; background:white;" onclick="like()" id="likebtn">&#9825</button>
+                            <button  class="btn" onclick="comment()">&#9729</button>
+                            <button  class="btn" onclick="retweet()">&#8635</button>
+                            <button  class="btn" onclick="share()">&#8733</button>
+                            <button  class="btn dropdown-toggle" data-bs-toggle="dropdown" ></button> 
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item" onclick="del()">hide</li>
+                                    <li class="dropdown-item">follow</li>
+                                    <li class="dropdown-item">save</li>
+                                    <li class="dropdown-item">report</li>
+                                    <li class="dropdown-item" onclick="delC()">del Com</li>
+                                </ul>
+                            <p id="comments"></p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 66px;" ><img id="dpimg" class="img-fluid rounded-circle" src="C:\Users\Doddi Naveen\Desktop\IMG_20220926_234546_821.jpg"></td>
+                <td>
+                    <span>ICC <span style="font-weight: lighter;">@ICC</span> .1d</span>
+                    <p style="color: rgb(19, 101, 177)">#t20Worldcup</p>
+                    <div class="row">
+                        <div id="pic" class="col-sm-12 col-lg-6">
+                            <div">
+                                <p>Afraid young Haris never locked in. Seeamed overwaved</p>
+                            </div>
+                        </div>
+                        <div id="buttons" class="bt-group">
+                            <button  class="btn bi bi-heart" style="border-radius: 30px; background:white;" onclick="like()" id="likebtn">&#9825</button>
+                            <button  class="btn" onclick="comment()">&#9729</button>
+                            <button  class="btn" onclick="retweet()">&#8635</button>
+                            <button  class="btn" onclick="share()">&#8733</button>
+                            <button  class="btn dropdown-toggle" data-bs-toggle="dropdown" ></button> 
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item" onclick="del()">hide</li>
+                                    <li class="dropdown-item">follow</li>
+                                    <li class="dropdown-item">save</li>
+                                    <li class="dropdown-item">report</li>
+                                    <li class="dropdown-item" onclick="delC()">del Com</li>
+                                </ul>
+                            <p id="comments"></p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr id="plzget">
+                <td style="width: 66px;" ><img id="dpimg" class="img-fluid rounded-circle" src="C:\Users\Doddi Naveen\Desktop\unniullas-25012022-0001.jpg"></td>
+                <td>
+                    <span>Radha <span style="font-weight: lighter;">@radhe24</span> .2h</span>
+                    <p style="color: rgb(19, 101, 177)">#jaiShreeKrishna</p>
+                    <div class="row">
+                        <div id="pic" class="col-sm-12 col-lg-6">
+                            <div>
+                                <video src="C:\Users\Doddi Naveen\Desktop\ajayvk2203-03052022-0001.mp4" controls style="width: 240px;"></video>
+                            </div>
+                        </div>
+                        <div id="buttons" class="bt-group">
+                            <button  class="btn bi bi-heart" style="border-radius: 30px; background:white;" onclick="like()" id="likebtn">&#9825</button>
+                            <button  class="btn" onclick="comment()">&#9729</button>
+                            <button  class="btn" onclick="retweet()">&#8635</button>
+                            <button  class="btn" onclick="share()">&#8733</button>
+                            <button  class="btn dropdown-toggle" data-bs-toggle="dropdown" ></button> 
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item" onclick="del()">hide</li>
+                                    <li class="dropdown-item">follow</li>
+                                    <li class="dropdown-item">save</li>
+                                    <li class="dropdown-item">report</li>
+                                    <li class="dropdown-item" onclick="delC()">del Com</li>
+                                </ul>
+                            <p id="comments"></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!-- <tfoot >
+                <td></td>
+                <td class="btn-group bg-light" style="position: fixed">
+                    <button class="btn" id="likebtn">home</button>
+                    <button class="btn">search</button>
+                    <button class="btn">notifications</button>
+                    <button class="btn">message</button>
+                </td>
+            </tfoot> -->
+            <tr>
+                <nav class="navbar fixed-bottom navbar-expand-sm navbar-light bg-light">
+                    <div class=" navbar-toggleable-lg" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Search</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Notifications</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Messages</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">☰</a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+            </tr>
+        </table>
+        <td><div id="new-fixed-div">New</div>
+    </div>
+</body>
+</html>
