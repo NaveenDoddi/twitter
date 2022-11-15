@@ -3,7 +3,6 @@
 function like1(){
     var color = document.getElementById("likebtn1").style.backgroundColor
     if(color == "white"){
-
         document.getElementById("likebtn1").style.backgroundColor="rgb(198, 41, 41)"
     }
     if(color == "rgb(198, 41, 41)"){
