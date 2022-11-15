@@ -5,7 +5,7 @@
 }
 
 #new-fixed-div{
-    height: 50px;width: 50px;border:2px solid; border-radius: 25px; position: fixed; right: 0px; bottom: 60px; background-color: rgb(132, 200, 239); padding: 8px;
+    height: 45px;width: 45px; border-radius: 23px; position: fixed; right: 0px; bottom: 60px; background-color: rgb(20, 118, 175);padding: 8px;
 }
 
 
@@ -16,4 +16,7 @@ img{
 
 video{
     border-radius: 10px;
+}
+#buttons{
+    border-radius: 30px; background:white;
 }
