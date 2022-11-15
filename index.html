@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>twitter</title>
 </head>
-<body onclick="theame()">
-    <div class="container" >
+<body onload="theame()" class="row justify-content-center">
+    <div class="container col-auto" >
         <table id="table"class="table col-sm-12 col-lg-6 col-md-4" style="width: 550px;">
             <thead>
                 <td style="width: 66px; text-align: left;"><img class="img-fluid rounded-circle" style="height: 40px; width: 40px;" src="mythriofficial-31012022-0001.jpg"></td>
@@ -21,87 +21,89 @@
             <tr>
                 <td style="width: 66px;" ><img id="dpimg" class="img-fluid rounded-circle" src="earth.jpg"></td>
                 <td>
-                    <span id="span">navnxx <span style="font-weight: lighter;">@naveenDoddi</span> .1h</span>
+                    <span id="span1">navnxx <span style="font-weight: lighter;">@naveenDoddi</span> .1h</span>
                     <p style="color: rgb(19, 101, 177)">#virat #chasemaaster</p>
                     <div class="row">
-                        <div id="pic" class="col-sm-12 col-lg-6">
-                            <div>
-                                <img id="img" style="width: 240px;" class="img-fluid" src="virat.jpg">
+                        <div id="pic" class="col-sm-6 col-lg-12">
+                            <div style="width: 240px;">
+                                <img id="image" class="img-fluid" src="virat.jpg">
                             </div>
                         </div>
-                        <div id="buttons" class="bt-group">
-                            <button  class="btn bi bi-heart" style="border-radius: 30px; background:white;" onclick="like()" id="likebtn">&#9825</button>
-                            <button  class="btn" onclick="comment()">&#9729</button>
-                            <button  class="btn" onclick="retweet()">&#8635</button>
-                            <button  class="btn" onclick="share()">&#8733</button>
-                            <button  class="btn dropdown-toggle" data-bs-toggle="dropdown" ></button> 
+                        <div id="buttonsgrp1" class="bt-group">
+                            <button id="buttons" class="btn bi bi-heart" style="border-radius: 30px; background:white;" onclick="like1()" id="likebtn1">&#9825</button>
+                            <button id="buttons" class="btn" style="border-radius: 30px; background:white;" onclick="comment1()">&#9729</button>
+                            <button id="buttons" class="btn" style="border-radius: 30px; background:white;" onclick="retweet1()">&#8635</button>
+                            <button id="buttons" class="btn" style="border-radius: 30px; background:white;" onclick="share1()">&#8733</button>
+                            <button id="buttons" class="btn dropdown-toggle" style="border-radius: 30px; background:white;" data-bs-toggle="dropdown" ></button> 
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-item" onclick="del()">hide</li>
+                                    <li class="dropdown-item" onclick="hide1()">hide*</li>
+                                    <li class="dropdown-item" onclick="unhide1()">unhide*</li>
+                                    <li class="dropdown-item" onclick="delC1()">del Com*</li>
                                     <li class="dropdown-item">follow</li>
                                     <li class="dropdown-item">save</li>
                                     <li class="dropdown-item">report</li>
-                                    <li class="dropdown-item" onclick="delC()">del Com</li>
                                 </ul>
-                            <p id="comments"></p>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 66px;" ><img id="dpimg" class="img-fluid rounded-circle" src="IMG_20220926_234546_821.jpg"></td>
-                <td>
-                    <span>ICC <span style="font-weight: lighter;">@ICC</span> .1d</span>
-                    <p style="color: rgb(19, 101, 177)">#t20Worldcup</p>
-                    <div class="row">
-                        <div id="pic" class="col-sm-12 col-lg-6">
-                            <div">
-                                <p>Afraid young Haris never locked in. Seeamed overwaved</p>
-                            </div>
-                        </div>
-                        <div id="buttons" class="bt-group">
-                            <button  class="btn bi bi-heart" style="border-radius: 30px; background:white;" onclick="like()" id="likebtn">&#9825</button>
-                            <button  class="btn" onclick="comment()">&#9729</button>
-                            <button  class="btn" onclick="retweet()">&#8635</button>
-                            <button  class="btn" onclick="share()">&#8733</button>
-                            <button  class="btn dropdown-toggle" data-bs-toggle="dropdown" ></button> 
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item" onclick="del()">hide</li>
-                                    <li class="dropdown-item">follow</li>
-                                    <li class="dropdown-item">save</li>
-                                    <li class="dropdown-item">report</li>
-                                    <li class="dropdown-item" onclick="delC()">del Com</li>
-                                </ul>
-                            <p id="comments"></p>
+                            <p id="comments1"></p>
                         </div>
                     </div>
                 </td>
             </tr>
             <tr id="plzget">
-                <td style="width: 66px;" ><img id="dpimg" class="img-fluid rounded-circle" src="unniullas-25012022-0001.jpg"></td>
+                <td style="width: 66px;" ><img id="dpimg" class="img-fluid rounded-circle" src="IMG_20220926_234546_821.jpg"></td>
                 <td>
-                    <span>Radha <span style="font-weight: lighter;">@radhe24</span> .2h</span>
-                    <p style="color: rgb(19, 101, 177)">#jaiShreeKrishna</p>
+                    <span id="span2">ICC <span style="font-weight: lighter;">@ICC</span> .1d</span>
+                    <p style="color: rgb(19, 101, 177)">#t20Worldcup</p>
                     <div class="row">
-                        <div id="pic" class="col-sm-12 col-lg-6">
+                        <div id="pic" class="col-sm-8 col-lg-12">
                             <div>
-                                <video src="ajayvk2203-03052022-0001.mp4" controls style="width: 240px;"></video>
+                                <p id="para">Afraid young Haris never locked in. Seeamed overwaved</p>
                             </div>
                         </div>
-                        <div id="buttons" class="bt-group">
-                            <button  class="btn bi bi-heart" style="border-radius: 30px; background:white;" onclick="like()" id="likebtn">&#9825</button>
-                            <button  class="btn" onclick="comment()">&#9729</button>
-                            <button  class="btn" onclick="retweet()">&#8635</button>
-                            <button  class="btn" onclick="share()">&#8733</button>
-                            <button  class="btn dropdown-toggle" data-bs-toggle="dropdown" ></button> 
+                        <div id="buttonsgrp2" class="bt-group">
+                            <button id="buttons" class="btn bi bi-heart" style="border-radius: 30px; background:white;" onclick="like2()" id="likebtn2">&#9825</button>
+                            <button id="buttons" class="btn" onclick="comment2()">&#9729</button>
+                            <button id="buttons" class="btn" onclick="retweet2()">&#8635</button>
+                            <button id="buttons" class="btn" onclick="share2()">&#8733</button>
+                            <button id="buttons" class="btn dropdown-toggle" data-bs-toggle="dropdown"></button> 
                                 <ul class="dropdown-menu">
-                                    <li class="dropdown-item" onclick="del()">hide</li>
+                                    <li class="dropdown-item" onclick="hide2()">hide*</li>
+                                    <li class="dropdown-item" onclick="unhide2()">unhide*</li>
+                                    <li class="dropdown-item" onclick="delC2()">del Com*</li>
                                     <li class="dropdown-item">follow</li>
                                     <li class="dropdown-item">save</li>
                                     <li class="dropdown-item">report</li>
-                                    <li class="dropdown-item" onclick="delC()">del Com</li>
                                 </ul>
-                            <p id="comments"></p>
-                            <p></p>
+                            <p id="comments2"></p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 66px;" ><img id="dpimg" class="img-fluid rounded-circle" src="unniullas-25012022-0001.jpg"></td>
+                <td>
+                    <span id="span3">Radha <span style="font-weight: lighter;">@radhe24</span> .2h</span>
+                    <p style="color: rgb(19, 101, 177)">#jaiShreeKrishna</p>
+                    <div class="row">
+                        <div id="pic" class="col-sm-6 col-lg-12">
+                            <div  style="width: 240px;">
+                                <video id="vedio" src="ajayvk2203-03052022-0001.mp4" controls style="max-width: 100%;"></video>
+                            </div> 
+                        </div>
+                        <div id="buttonsgrp3" class="bt-group">
+                            <button id="buttons" class="btn bi bi-heart" style="border-radius: 30px; background:white;" onclick="like3()" id="likebtn3">&#9825</button>
+                            <button id="buttons" class="btn" onclick="comment3()">&#9729</button>
+                            <button id="buttons" class="btn" onclick="retweet3()">&#8635</button>
+                            <button id="buttons" class="btn" onclick="share3()">&#8733</button>
+                            <button id="buttons" class="btn dropdown-toggle" data-bs-toggle="dropdown" ></button> 
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item" onclick="hide3()">hide*</li>
+                                    <li class="dropdown-item" onclick="unhide3()">unhide*</li>
+                                    <li class="dropdown-item" onclick="delC3()">del Com*</li>
+                                    <li class="dropdown-item">follow</li>
+                                    <li class="dropdown-item">save</li>
+                                    <li class="dropdown-item">report</li>
+                                </ul>
+                            <p id="comments3"></p>
                         </div>
                     </div>
                 </td>
@@ -116,7 +118,7 @@
                 </td>
             </tfoot> -->
             <tr>
-                <nav class="navbar fixed-bottom navbar-expand-sm navbar-light bg-light">
+                <nav class="navbar fixed-bottom navbar-expand navbar-light bg-light">
                     <div class=" navbar-toggleable-lg" id="navbarNav">
                       <ul class="navbar-nav">
                         <li class="nav-item active">
@@ -139,7 +141,7 @@
                 </nav>
             </tr>
         </table>
-        <td><div id="new-fixed-div">New</div>
+        <td><a  href="#"><div ondblclick="table()" id="new-fixed-div">New</div></a>
     </div>
 </body>
 </html>
